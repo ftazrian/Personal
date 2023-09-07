@@ -1,0 +1,308 @@
+body {
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../image/shoe.jpg");
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  animation: introLoad 2s forwards;
+  /* overflow: hidden; */
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 2.3em;
+  margin-top: -0.6em;
+  cursor: pointer;
+}
+
+section.hero {
+  color: white;
+  height: 90vh;
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.down-arrow {
+  stroke: white;
+  position: absolute;
+  bottom: 8em;
+  width: 1em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+
+.hero svg path {
+  fill: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
+}
+
+.subhead p {
+  font-size: 1.4rem;
+}
+
+nav {
+  /* display: none; */
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgb(255, 255, 255);
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+ul li a {
+  color: black;
+  padding: 0.75em 2em;
+  display: block;
+}
+
+ul li a:hover {
+  background: rgb(178, 178, 178);
+}
+
+nav.close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+
+.down-arrow path {
+  fill: white;
+}
+
+.close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 11em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.desc {
+  line-height: 1.5rem;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .header menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 920px) {
+  svg.close {
+    display: none;
+  }
+}
+@media only screen and (min-width: 920px) {
+  ul {
+    display: flex;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 920px) {
+  a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 920px) {
+  a:hover {
+    background: none;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .logo {
+    color: black;
+  }
+}
+@media only screen and (min-width: 920px) {
+  span {
+    color: red;
+  }
+}
+@media only screen and (min-width: 920px) {
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .subhead {
+    margin-bottom: 3em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  svg.down-arrow {
+    stroke: black;
+    position: unset;
+  }
+}
+@media only screen and (min-width: 920px) {
+  path {
+    fill: black;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  img {
+    width: 25em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .content {
+    text-align: right;
+    width: 25em;
+  }
+}
+.feature {
+  display: flex;
+  /* justify-content: space-evenly;
+  flex-flow: row; */
+}
+
+.feature left {
+  display: flex;
+}
+
+@media only screen and (min-width: 920px) {
+  .feature.left {
+    grid-template-areas: "left right";
+  }
+}
+@media only screen and (min-width: 920px) {
+  img {
+    grid-area: left;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .content {
+    text-align: left;
+    width: 25em;
+    justify-self: left;
+  }
+}
+@media only screen and (min-width: 920px) {
+  nav {
+    transform: translateX(0);
+    position: absolute;
+    display: block;
+    /* width: auto; */
+    height: auto;
+    background: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .feature {
+    gap: 0;
+  }
+}
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes moveArrow {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=ctyle.css.map */
