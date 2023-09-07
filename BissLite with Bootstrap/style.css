@@ -1,0 +1,66 @@
+body{
+    font-family: sans-serif;
+}
+#heading1{
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: inherit;
+}
+
+.img {
+    padding-left: 10px;
+}
+#para2{
+    font-size: 15px;
+}
+#heading3{
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 30px;
+    margin-top: -25px;
+}
+#heading4{
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 25px;
+    margin-top: -25px;
+}
+
+.fa-2x {
+    padding-left: 0px;
+}
+
+.heading h3 {
+    font-size: 20px;
+}
+
+.heading h3 {
+    padding-left: 45px;
+    margin-top: -35px;
+}
+
+.heading p {
+    margin-top: 20px;
+}
+
+.testimonial {
+    background-color: rgb(182, 231, 249);
+}
+#footerheading{
+    font-size: 17px;
+    font-weight: bold;
+}
+#footerheading2{
+    font-size: 17px;
+    font-weight: bold;
+}
+#creatbtn{
+    background-image: url("submit_button.png");
+    padding: 20px;
+    padding-left: 64px;
+    border: none;
+    margin: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
